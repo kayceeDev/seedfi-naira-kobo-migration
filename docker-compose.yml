@@ -7,10 +7,9 @@ services:
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: 
-      seedfi
+      POSTGRES_DB: seedfi
     ports:
-      - "5432:5432"
+      - "3357:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
     healthcheck:
