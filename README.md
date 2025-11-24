@@ -36,7 +36,7 @@ docker pull postgres:15-alpine
 # Run PostgreSQL container
 docker run --name postgres-naira \
   -e POSTGRES_PASSWORD=postgres \
-  -e POSTGRES_USER=postgres \
+  -e POSTGRES_USER=root \
   -e POSTGRES_DB=seedfi \
   -p 3357:5432 \ 
   -d postgres:15-alpine
