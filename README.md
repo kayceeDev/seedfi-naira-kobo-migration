@@ -36,7 +36,7 @@ docker pull postgres:15-alpine
 # Run PostgreSQL container
 docker run --name postgres-naira \
   -e POSTGRES_PASSWORD=postgres \
-  -e POSTGRES_USER=root \
+  -e POSTGRES_USER=postgres \
   -e POSTGRES_DB=seedfi \
   -p 3357:5432 \ 
   -d postgres:15-alpine
@@ -59,7 +59,7 @@ services:
     image: postgres:15-alpine
     container_name: postgres-naira
     environment:
-      POSTGRES_USER: root
+      POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
       POSTGRES_DB: 
       seedfi
