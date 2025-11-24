@@ -19,5 +19,10 @@
     "kobo"
   ],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^7.0.0",
+    "express": "^5.1.0",
+    "prisma": "^7.0.0"
+  }
 }
