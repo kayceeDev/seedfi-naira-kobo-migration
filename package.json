@@ -1,0 +1,23 @@
+{
+  "name": "naira-kobo-migration",
+  "version": "1.0.0",
+  "description": "Migration from naira.kobo decimal to kobo integer format",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "migrate": "npx prisma migrate dev",
+    "migrate:prod": "npx prisma migrate deploy",
+    "migrate:kobo": "node src/scripts/migrate-to-kobo.js",
+    "prisma:studio": "npx prisma studio"
+  },
+  "keywords": [
+    "express",
+    "prisma",
+    "migration",
+    "naira",
+    "kobo"
+  ],
+  "author": "",
+  "license": "ISC"
+}
